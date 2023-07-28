@@ -1,6 +1,6 @@
 import random
 import torchaudio
-from torch._six import string_classes
+# from torch._six import string_classes
 import collections
 import re
 import torch.nn.functional as F
@@ -13,6 +13,9 @@ import torchaudio.transforms as T
 import os
 import torch
 from importlib_resources import files
+
+int_classes = int
+string_classes = str
 
 
 class CLAPWrapper():
